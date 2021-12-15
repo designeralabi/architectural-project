@@ -123,3 +123,62 @@ html{
     }
 }
 
+.side-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 40rem;
+    z-index: 100;
+    text-align: center;
+}
+
+.menu{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%)
+}
+
+.menu-links{
+    color: #555;
+    font-family: "Baloo Da 2";
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.menu-links::before{
+    content: attr(data-content);
+    color: rgb(248, 135, 6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap;   
+}
+
+.menu-links:hover::before{
+    width: 100%;
+}
+
+.social-media{
+    position: absolute;
+    bottom: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media i{
+    font-size: 2.2rem;
+    margin: 3rem;
+    height: auto;
+    padding: 1rem;
+    background-color: #777;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+}
