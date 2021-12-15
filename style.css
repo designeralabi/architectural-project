@@ -34,6 +34,20 @@ html{
     height: 0.2rem;
     background-color: #fff;
     box-shadow: 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+    transition: transform 1s;
+}
+
+.change-hamburger .line-1{
+    transform: rotate(45deg) translate(0.3rem, 0.8rem);
+}
+
+.change-hamburger .line-2{
+    width: 0;
+    visibility: hidden;
+}
+
+.change-hamburger .line-3{
+    transform: rotate(-45deg) translate(0.2rem, -0.6rem);
 }
 
 
