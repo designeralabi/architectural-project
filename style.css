@@ -126,12 +126,17 @@ html{
 .side-bar{
     position: fixed;
     top: 0;
-    right: 0;
+    right: -40rem;
     background-color: #fff;
     height: 100%;
     width: 40rem;
     z-index: 100;
     text-align: center;
+    transition: right 0.5s;
+}
+
+.change-sidebar{
+    right: 0;
 }
 
 .menu{
@@ -191,4 +196,6 @@ html{
   .social-media i:hover {
     background-color: #c29525;
   }
+
+ 
   
