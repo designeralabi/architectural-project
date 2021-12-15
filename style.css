@@ -22,6 +22,11 @@ html{
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    transition: right 0.5s;
+}
+
+.change-hamburger{
+    right: 33rem;
 }
 
 .line{
@@ -138,6 +143,8 @@ html{
 .change-sidebar{
     right: 0;
 }
+
+
 
 .menu{
    position: absolute;
