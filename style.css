@@ -146,6 +146,7 @@ html{
     font-family: "Baloo Da 2";
     font-size: 3rem;
     cursor: pointer;
+    position: relative;
 }
 
 .menu-links::before{
@@ -157,7 +158,8 @@ html{
     width: 0;
     transition: width 0.3s ease-in-out;
     overflow: hidden;
-    white-space: nowrap;   
+    white-space: nowrap; 
+     
 }
 
 .menu-links:hover::before{
@@ -172,13 +174,21 @@ html{
     justify-content: center;
 }
 
-.social-media i{
+.social-media i {
     font-size: 2.2rem;
     margin: 3rem;
-    height: auto;
-    padding: 1rem;
+    width: 4.5rem;
+    height: 4.5rem;
     background-color: #777;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
-    text-align: center;
-}
+    transition: background-color 0.3s;
+  }
+  
+  .social-media i:hover {
+    background-color: #c29525;
+  }
+  
