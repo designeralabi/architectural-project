@@ -129,6 +129,31 @@ html{
     text-shadow: 0.03rem 0.3rem 4px rgba(0, 0, 0, 0.4);
     opacity: 0;
     animation: moveBanner 1s 0.9s forwards;
+    overflow: hidden;
+}
+
+.banner button::before{
+    content: "Discover More";
+    background-color: #000;
+    width: 0;
+    height: 5rem;
+    text-align: center;
+    padding: 1.65rem 0;
+    position: absolute;
+    left: -22rem;
+    top: 0;
+    opacity: 0;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    white-space: nowrap; 
+}
+
+.banner button:hover::before{
+    background-color: #000;
+    left: 0;
+    opacity: 1;
+    width: 100%;
+    
 }
 
 @keyframes moveBanner {
